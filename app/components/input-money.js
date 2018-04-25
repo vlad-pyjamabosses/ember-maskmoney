@@ -1,3 +1,3 @@
-import InputMoney from 'ember-maskmoney/components/imput-money';
+import InputMoney from 'ember-vmaskmoney/components/imput-money';
 
 export default InputMoney;

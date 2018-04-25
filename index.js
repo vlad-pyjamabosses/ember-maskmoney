@@ -2,7 +2,7 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-maskmoney',
+  name: 'ember-vmaskmoney',
   included(app) {
     this._super.included(app);
     if (!process.env.EMBER_CLI_FASTBOOT) {
