@@ -1,6 +1,6 @@
 {
   "name": "ember-vmaskmoney",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An ember-cli addon for creating money masks on text fields.",
   "directories": {
     "doc": "doc",
@@ -17,7 +17,7 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies":{
+  "dependencies": {
     "ember-cli-babel": "^5.1.5"
   },
   "devDependencies": {
