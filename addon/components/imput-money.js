@@ -10,8 +10,12 @@ export default Ember.TextField.extend({
   allowZero: true,
   allowNegative: false,
   allowDecimal: true,
+  allowEmpty: false,
+  bringCaretAtEndOnFocus: true,
+  reverse: false,
+  selectAllOnFocus: false,
 
-  options: Ember.computed('prefix', 'suffix', 'affixesStay', 'thousands', 'decimal', 'precision', 'allowZero', 'allowNegative', 'allowDecimal', function() {
+  options: Ember.computed('prefix', 'suffix', 'affixesStay', 'thousands', 'decimal', 'precision', 'allowZero', 'allowNegative', 'allowDecimal', 'allowEmpty', 'bringCaretAtEndOnFocus', 'reverse', 'selectAllOnFocus', function() {
     return {
       prefix: this.get('prefix'),
       suffix: this.get('suffix'),
@@ -21,7 +25,11 @@ export default Ember.TextField.extend({
       precision: this.get('precision'),
       allowZero: this.get('allowZero'),
       allowNegative: this.get('allowNegative'),
-      allowDecimal: this.get('allowDecimal')
+      allowDecimal: this.get('allowDecimal'),
+      allowEmpty: this.get('allowEmpty'),
+      bringCaretAtEndOnFocus: this.get('bringCaretAtEndOnFocus'),
+      reverse: this.get('reverse'),
+      selectAllOnFocus: this.get('selectAllOnFocus'),
     };
   }),
 
